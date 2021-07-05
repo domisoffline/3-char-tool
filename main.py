@@ -29,8 +29,7 @@ while True:
     [1] Upcoming 3 Character Names
     [2] Next 3 Character Name To Drop
     [3] Snipe Next 3 Character Username
-    [4] Auto-Snipe All 3 Character Usernames Coming Up (Leave Program Open)
-    [5] View Next Available 3 Char on NameMC\n""")
+    [4] Auto-Snipe All 3 Character Usernames Coming Up (Leave Program Open)\n""")
 
     r = requests.get("http://api.coolkidmacho.com/three") 
     rjson = r.json()
@@ -74,5 +73,3 @@ while True:
             delay = input("What delay would you like to snipe names with?\n")
             os.system(f"mcsniperpy snipe --username {current3char} --offset {delay}")
             print("\nSniping Next Name.\n")
-    if response == '5':
-        
