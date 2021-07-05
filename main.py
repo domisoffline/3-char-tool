@@ -1,12 +1,9 @@
 from datetime import datetime
 import requests
 import json
-from colorama import *
-from termcolor import colored
 import os
 from time import sleep
-init()
-print(colored("""                      
+print("""                      
  /_ _  _  /__  _  _  /_
 /_//_|/_ /\/_//_|/_ /\ 
           /            
@@ -18,11 +15,12 @@ print(colored("""
 _/__  _  /             
 / /_//_//              
                                          
-""", 'cyan'))
+""")
 
 
 print("\nInstalling required dependencies...\n")
-os.system("pip install mcsniperpy")
+os.system("pip install --upgrade mcsniperpy")
+os.system("mcsniperpy init")
 while True:
     print("\n")
     response = input("""What would you like to view?
